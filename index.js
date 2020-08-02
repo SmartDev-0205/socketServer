@@ -7,7 +7,7 @@ let server = http.Server(app);
 let socketIO = require('socket.io');
 let io = socketIO(server);
 
-const port = 80;
+const port = 3000;
 
 io.on('connection', (socket) => {
     console.log('user connected');
