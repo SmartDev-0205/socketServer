@@ -9,6 +9,12 @@ let io = socketIO(server);
 
 const port = 3000;
 
+app.get('/', (req, res) => {
+	res.json({
+		data: 'Success!'
+	})
+})
+
 io.on('connection', (socket) => {
     console.log('user connected');
 
