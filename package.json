@@ -6,12 +6,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-	"heroku-postbuild": "npm install"
+    "heroku-postbuild": "npm install"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^8.2.0",
+    "env": "^0.0.2",
     "express": "^4.15.2",
     "socket.io": "^1.7.3"
   }
